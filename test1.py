@@ -14,3 +14,11 @@ print('change4')
 # change 5
 # add the change through feature/feature1
 print('change5')
+
+# change 6
+# add the change through feature/feature1_1
+print('change6')
+
+# change 7
+# add the change through feature/feature1_1
+print('change7')
