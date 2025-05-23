@@ -3,8 +3,8 @@
 
 change 1  -- commit 1
 
-change 2 -- commit 2
+change 2  -- commit 2
 
-change 3
+change 3  -- commit 3
 
-change 4
+change 4  -- commit 4
