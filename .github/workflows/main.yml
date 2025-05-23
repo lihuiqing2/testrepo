@@ -1,6 +1,11 @@
 name: Run Python Script
-on: [push]  # Runs when code is pushed
-
+on:
+  push:
+    branches:
+      - main  # Runs only when pushing to main
+  pull_request:
+    branches:
+      - main  # Runs only for PRs targeting main
 jobs:
   run-python:
     runs-on: ubuntu-latest
