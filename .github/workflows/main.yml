@@ -14,7 +14,7 @@ jobs:
 
       - name: Enable PowerShell Script Execution
         run: Set-ExecutionPolicy RemoteSigned -Scope Process
-        shell: powershell
+        shell: pwsh
 
       - name: Set Up Python
         uses: actions/setup-python@v5
