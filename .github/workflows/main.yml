@@ -16,6 +16,10 @@ jobs:
         run: |
           Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
 
+      - name: Get powershell execution policy
+        run: |
+          Get-ExecutionPolicy -l
+
       - name: Set up Python 3.13
         uses: actions/setup-python@v5
         with:
