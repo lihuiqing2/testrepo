@@ -12,6 +12,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Set powershell execution policy
+        run: |
+          Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+
       - name: Install Dependencies
         run: |
           if (Test-Path requirements.txt) {pip install -r requirements.txt}
