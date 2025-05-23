@@ -14,7 +14,7 @@ jobs:
 
       - name: Set powershell execution policy
         run: |
-          Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
 
       - name: Install Dependencies
         run: |
@@ -22,3 +22,7 @@ jobs:
 
       - name: Run Python Script
         run: python test1.py  # Replace with your Python file name
+
+      - name: Un-set powershell execution policy
+        run: |
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
