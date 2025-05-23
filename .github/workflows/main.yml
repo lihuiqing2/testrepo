@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Enable PowerShell Script Execution
-        run: Set-ExecutionPolicy Bypass -Scope Process -Force
+        run: Set-ExecutionPolicy Unrestricted -Scope Process -Force
         shell: pwsh
 
       - name: Set Up Python
