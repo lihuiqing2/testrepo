@@ -18,6 +18,7 @@ jobs:
 
       - name: Set Up Python
         uses: actions/setup-python@v5
+        shell: pwsh
         with:
           python-version: '3.13'
 
