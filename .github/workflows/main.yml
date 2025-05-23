@@ -14,7 +14,7 @@ jobs:
 
       - name: Set powershell execution policy
         run: |
-          Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Bypass -Force
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
         shell: pwsh
 
       - name: Get powershell execution policy
@@ -37,5 +37,5 @@ jobs:
 
       - name: Un-set powershell execution policy
         run: |
-          Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
         shell: pwsh
