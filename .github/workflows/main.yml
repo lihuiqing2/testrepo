@@ -16,6 +16,11 @@ jobs:
         run: |
           Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
       - name: Install Dependencies
         run: |
           if (Test-Path requirements.txt) {pip install -r requirements.txt}
