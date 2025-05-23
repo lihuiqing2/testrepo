@@ -1,2 +1,10 @@
 "Initial content for main" 
 "Second line for main" 
+
+change 1  -- commit 1
+
+change 2  -- commit 2
+
+change 3  -- commit 3
+
+change 4  -- commit 4
