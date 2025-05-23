@@ -15,12 +15,6 @@ jobs:
       - name: Set powershell execution policy
         run: |
           Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
-        shell: powershell
-
-      - name: Set Up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
 
       - name: Install Dependencies
         run: |
