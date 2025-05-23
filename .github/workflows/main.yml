@@ -35,7 +35,7 @@ jobs:
       - name: Run Python Script
         run: python test1.py  # Replace with your Python file name
 
-      #- name: Un-set powershell execution policy
-      #  run: |
-      #    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
-      #  shell: pwsh
+      - name: Un-set powershell execution policy
+        run: |
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
+        shell: pwsh
