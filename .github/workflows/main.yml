@@ -1,4 +1,5 @@
 name: Run Python Script
+runs-on: bob_runner
 on: [push]  # Runs when code is pushed
 
 jobs:
