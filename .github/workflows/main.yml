@@ -15,12 +15,12 @@ jobs:
       - name: Set powershell execution policy
         run: |
           Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
-        shell: powershell
+        shell: pwsh
 
       - name: Get powershell execution policy
         run: |
           Get-ExecutionPolicy -l
-        shell: powershell
+        shell: pwsh
 
 
       - name: Set up Python 3.13
@@ -38,4 +38,4 @@ jobs:
       - name: Un-set powershell execution policy
         run: |
           Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
-        shell: powershell
+        shell: pwsh
