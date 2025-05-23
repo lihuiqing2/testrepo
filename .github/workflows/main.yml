@@ -12,16 +12,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Enable PowerShell Script Execution
-        run: |
-          Set-ExecutionPolicy Unrestricted -Scope Process -Force
-        shell: pwsh
-
-      - name: Set Up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-
       - name: Install Dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
