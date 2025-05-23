@@ -12,10 +12,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set powershell execution policy
-        run: |
-          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
-        shell: pwsh
+      #- name: Set powershell execution policy
+      #  run: |
+      #    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+      #  shell: pwsh
 
       - name: Get powershell execution policy
         run: |
@@ -23,10 +23,10 @@ jobs:
         shell: pwsh
 
 
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
+      #- name: Set up Python 3.13
+      #  uses: actions/setup-python@v5
+      #  with:
+      #    python-version: '3.13'
 
       - name: Install Dependencies
         run: |
@@ -35,7 +35,7 @@ jobs:
       - name: Run Python Script
         run: python test1.py  # Replace with your Python file name
 
-      - name: Un-set powershell execution policy
-        run: |
-          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
-        shell: pwsh
+      #- name: Un-set powershell execution policy
+      #  run: |
+      #    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined -Force
+      #  shell: pwsh
